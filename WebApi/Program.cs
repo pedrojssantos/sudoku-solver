@@ -50,6 +50,8 @@ app.MapPost("/api/sudoku/solve", (SudokuRequest req, SolverWrapper solverWpp) =>
     }
 });
 
+
+app.UseStaticFiles();
 app.Run();
 
 public record SudokuRequest(int[] Board);
