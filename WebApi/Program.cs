@@ -38,7 +38,7 @@ app.MapPost("/api/sudoku/solve", (SudokuRequest req, SolverWrapper solverWpp) =>
 
         solverWpp.GetValues(ref solvedBoard[0]);
 
-        return Results.Ok(new { sudoku = solvedBoard });
+        return Results.Ok(new { board = solvedBoard });
     }
     catch(InvalidOperationException ex)
     {
