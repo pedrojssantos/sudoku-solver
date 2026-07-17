@@ -1,7 +1,7 @@
 ﻿using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-namespace Backend.Services
+namespace WebApi.Services
 {
     public partial class SolverWrapper : IDisposable
     {
