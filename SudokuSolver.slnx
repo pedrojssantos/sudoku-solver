@@ -4,7 +4,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Backend/Backend.csproj" Id="8f2c6bcd-1b8e-4a22-9e5f-93ce4b650776">
+  <Project Path="WebApi/WebApi.csproj" Id="8f2c6bcd-1b8e-4a22-9e5f-93ce4b650776">
     <BuildDependency Project="Solver/Solver.vcxproj" />
   </Project>
   <Project Path="Solver/Solver.vcxproj" Id="1372990d-faea-4b06-96a3-2d9d643c816d" />
