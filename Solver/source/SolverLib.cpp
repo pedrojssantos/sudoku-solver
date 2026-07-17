@@ -20,8 +20,18 @@ extern "C"
 		if (graph) graph->insertValue(id, value);
 	}
 
-	API bool SolveSodokuGraph(SudokuGraph* graph)
+	API bool SolveSudokuGraph(SudokuGraph* graph)
 	{
 		if (graph) return Solver::solve(*graph);
+
+		return false;
+	}
+
+	API void GetGraphValues(SudokuGraph* graph, int* buffer)
+	{
+		for (int i = 0; i < 81; ++i)
+		{
+			buffer[i] = graph->getVertices()[i]._value;
+		}
 	}
 }
